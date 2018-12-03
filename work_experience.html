@@ -8,48 +8,60 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/html5reset-1.6.1.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="lightbox2-master/dist/css/lightbox.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
     </script>
-    <script>
-    $(document).ready(function(){
-    $('ul li a:first').focus();
-    $('ul li a').click(function(){
-    $(this).focus()
-    })
-    console.log(document.activeElement)
-    $(":focus").removeClass("btn btn-light");
-    $(":focus").addClass("btn btn-danger")
-});
-        </script> 
 </head>
 <body>
 <main>
 <header>
+<a class="skip-main" href="#main">Skip to main content</a>
+<h1>Work Experience</h1>
     <nav>
         <ul>
-            <li><a class= "btn btn-light" href = "index.html" tabindex="1" id='about'>About</a></li>
-            <li><a class= "btn btn-light" href = "academics.html" tabindex="2" id = "academics">Academics</a></li>
-            <li><a class= "btn btn-light" href = "internship.html"tabindex="3" id= 'internship'>Internship</a></li>
-            <li><a class= "btn btn-light" href = "work_experience.html" tabindex="4" id = work >Work Experience</a></li>
+            <li><a class= "btn btn-light" href = "index.html"  id='about'>About</a></li>
+            <li><a class= "btn btn-light" href = "academics.html" id = "academics">Academics</a></li>
+            <li><a class= "btn btn-light" href = "internship.html" id= 'internship'>Internship</a></li>
+            <li><a class= "btn btn-danger" href = "work_experience.html"  id = work >Work Experience</a></li>
         </ul>
     </nav>
-    <h1>Work Experience</h1>
 </header>
-<div class="flex-container" role="main">
-<img class="flex-work-image-1" src="portfolio_images/aadl_clipping_files.jpg" alt = ""/>
-<img class="flex-work-image-2" src="portfolio_images/aadl_cold_room.jpg" alt = ""/>
-<img class="flex-work-image-3" src="portfolio_images/aadl_negative.jpg" alt = ""/>
-<p class="flex-work-item-1">In 2012, I began interning at the Belleville Area Museum and Archives and working at the Belleville Area District Library.  There I accessioned new acquisitions, entered data about the collection into PastPerfect, scanned documents, and assisted researchers and retrieved information for museum exhibits. My experiences at the Belleville Museum illustrated for me the importance of digitization, especially for local history collections.  The museum had many historically interesting documents, which, not having been accessioned, cataloged, or entered into any database, were not accessible to researchers.</p>  
+<div class="flex-work-container" role="main">
+<p id="main" tabindex="-1" class="flex-work-item-1">In 2012, I began interning at the Belleville Area Museum and Archives and working at the Belleville Area District Library.  There I accessioned new acquisitions, entered data about the collection into PastPerfect, scanned documents, and assisted researchers and retrieved information for museum exhibits. My experiences at the Belleville Museum illustrated for me the importance of digitization, especially for local history collections.  The museum had many historically interesting documents, which, not having been accessioned, cataloged, or entered into any database, were not accessible to researchers.</p>  
     
 <p class="flex-work-item-2">During the Summers from 2014 to 2017, I interned at the BASF Corporate Library in Wyandotte. There I assisted in inventorying and preparing reports for digitization, communicating with various departments and third-party vendors, inventorying and digitizing data in obsolete mediums (such as 5 ¼ and 3 ½ in. floppy discs), and maintaining and weeding the library collection.  Additionally, I also worked at the BASF Corporation as the Assistant to the Safety Data Sheet Coordinator, entering Material Safety Data Sheets into a database for the Wyandotte site.</p> 
     
-<p class="flex-work-item-3">I am also currently working at the Ann Arbor District Library (AADL) Archives.  The AADL archives are comprised primarily of newspaper clipping, photo negatives, and bound volumes from The Ann Arbor News.  At the archives, I am digitizing photo negatives from the collection, entering metadata into a negatives database, indexing them, and publishing them on the AADL website.  In addition to this, I also digitized Ann Arbor News articles and assisted in answering reference questions submitted to the archive regarding local history.</p>  
+<p class="flex-work-item-3">I am also currently working at the Ann Arbor District Library (AADL) Archives.  The AADL archives are comprised primarily of newspaper clipping, photo negatives, and bound volumes from The Ann Arbor News.  At the archives, I am digitizing photo negatives from the collection, entering metadata into a negatives database, indexing them, and publishing them on the AADL website.  In addition to this, I also digitized Ann Arbor News articles and assisted in answering reference questions submitted to the archive regarding local history.</p> 
+
+<a class="flex-work-item work-1" href="portfolio_images/aadl_clipping_files.jpg" data-lightbox="image-aadl" data-title="AADL clipping files"><img src="portfolio_images/aadl_clipping_files.jpg" alt="AADL clipping files"></a>
+
+<a class="flex-work-item work-2" href="portfolio_images/aadl_cold_room.jpg" data-lightbox="image-aadl" data-title="AADL cold room"><img src="portfolio_images/aadl_cold_room.jpg" alt="AADL cold room"></a>
+
+<a class="flex-work-item work-3" href="portfolio_images/bam.jpg" data-lightbox="image-bam" data-title="Bellville Area Museum"><img src="portfolio_images/bam.jpg" alt="Bellville Area Museum"></a>
+
+<a class="flex-work-item work-4" href="portfolio_images/aadl_negative.jpg" data-lightbox="image-aadl" data-title="AADL negative"><img src="portfolio_images/aadl_negative.jpg" alt="AADL negative"></a>
+
+<a class="flex-work-item work-5" href="portfolio_images/bam_exterior.jpg" data-lightbox="image-bam" data-title="Bellville Area Museum Exterior"><img src="portfolio_images/bam_exterior.jpg" alt="Bellville Area Museum Exterior"></a>
+
+<a class="flex-work-item work-6" href="portfolio_images/bam_folders.jpg" data-lightbox="image-bam" data-title="Bellville Area Museum Folders"><img src="portfolio_images/bam_folders.jpg" alt="Bellville Area Museum Folders"></a>
 </div>
+
 </main>
-<footer> Olivia Oudsema, 2018</footer>
+<footer> Olivia Oudsema, 2018
+    <a class= "btn btn-outline-primary" id="scroll"> Scroll to Top</a>
+</footer>
+
 <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+<script src="lightbox2-master/dist/js/lightbox.js">
+</script>
+<script>
+$("#scroll").click(function() {
+    document.body.scrollTop = 0; 
+    document.documentElement.scrollTop = 0;})
+</script> 
+
 </body>
 </html>

@@ -10,48 +10,47 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
-    </script>
-
-<script>
-    $(document).ready(function(){
-    $('ul li a:first').focus();
-    $('ul li a').click(function(){
-        $(this).focus()
-        });
-    console.log(document.activeElement)
-    $(":focus").removeClass("btn btn-light");
-    $(":focus").addClass("btn btn-danger")
-});
-</script>  
+    </script>  
 </head>
 <body>
     <main>
 <header>
+<a class="skip-main" href="#main">Skip to main content</a>
         <h1>About</h1>
 
     <nav>
         <ul>
-            <li><a class= "btn btn-light" href = "index.html" tabindex="1" id='about'>About</a></li>
-            <li><a class= "btn btn-light" href = "academics.html" tabindex="2" id = "academics">Academics</a></li>
-            <li><a class= "btn btn-light" href = "internship.html"tabindex="3" id= 'internship'>Internship</a></li>
-            <li><a class= "btn btn-light" href = "work_experience.html" tabindex="4" id = work >Work Experience</a></li>
+            <li><a class= "btn btn-danger" href = "index.html" id='about'>About</a></li>
+            <li><a class= "btn btn-light" href = "academics.html" id = "academics">Academics</a></li>
+            <li><a class= "btn btn-light" href = "internship.html" id= 'internship'>Internship</a></li>
+            <li><a class= "btn btn-light" href = "work_experience.html"  id = work >Work Experience</a></li>
         </ul>
     </nav>
 </header>
 <div class="flex-container" role="main">
-<p class="flex-index-item-1">I am a student specializing in Archives and Records Management and Digital Curation at the University of Michigan School of Information.   My undergraduate degree is in History and as an aspiring archivist, I am passionate about digitizing archival collections and using technology to make libraries’ and archives’ resources more accessible to patrons and researchers.</p>  
+<p id="main" tabindex="-1" class="flex-index-item-1">I am a student specializing in Archives and Records Management and Digital Curation at the University of Michigan School of Information.   My undergraduate degree is in History and as an aspiring archivist, I am passionate about digitizing archival collections and using technology to make libraries’ and archives’ resources more accessible to patrons and researchers.</p>  
     
 <p class="flex-index-item-2">Digital Curation provides the opportunity to combine both traditional archival concepts and principles, such as provenance, with technology, such as in the digital humanities. Digitization also allows the materials that are contained in libraries and archives to be made more widely accessible to researchers and patrons, without the limitations and constraints of having to visit a particular location.  However, once materials have been digitized they, like born digital material, would also require continued care and maintenance.  Through a combination of coursework, ranging from archival theory to constructing databases and programming, and practical experience and internships, at institutions such as the Ann Arbor District Library and the Gerald R. Ford Presidential Library, the UMSI program is allowing me to gain the knowledge and skills to pursue my interests in preservation and accessibility.</p>
-<img class="flex-index-image-1" src="portfolio_images/olivia_oudsema_portrait.jpg" alt = ""/>
+<img class="flex-index-image-1" src="portfolio_images/olivia_oudsema_portrait.jpg" alt = "Olivia"/>
 
 <img class= "flex-index-image-2" src="portfolio_images/um_north_quad.jpg" alt = "U of M North Quad"/>
 
 </div>
 </main>
-<footer class="background"> Olivia Oudsema, 2018</footer>
+<footer class="background"> Olivia Oudsema, 2018
+    <a class= "btn btn-outline-primary" id="scroll"> Scroll to Top</a>
+</footer>
 <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>   -->
+<script>
+
+$("#scroll").click(function() {
+    document.body.scrollTop = 0; 
+    document.documentElement.scrollTop = 0;})
+
+</script>
+
 </body>
 </body>
 </html>
