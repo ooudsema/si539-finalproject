@@ -29,14 +29,13 @@
 
 </header>
 <div class="flex-container" role="main">
-
-<img class = "flex-internship-item-1" src="portfolio_images/grf_library_box.jpg" alt = "Archival Box"/>
+<img class = "flex-internship-item-1" src="portfolio_images/grf_library_box.jpg" alt = "Archival Box" onerror="myFunction()"/>
 
 
 <p id="main" tabindex="-1" class = "flex-internship-text-item">During Summer 2018, I interned at the Gerald R. Ford Presidential Library. The Ford Library is part of the National Archives, and is located on the University of Michigan’s North Campus.  During my internship, I focused on textual digitization, specifically on digitizing a selection from Betty Ford’s papers.  These include documents from Betty Ford’s trips, state dinners and the general subject files. The purpose of this project was to allow researchers greater access to the collection, without having to travel to the Ford Library.   This project allowed me to gain experience in digitization and to develop a greater familiarity with the technical standards and digitization workflows being used by the Ford Library.</p>  
 
-<img class = "flex-internship-item-2" src="portfolio_images/grf_library_box_label.jpg" alt = "Archival Label"/>
-<img class = "flex-internship-item-3" src="portfolio_images/grf_library_scanner.jpg" alt = "Scanner at Ford Library"/>
+<img class = "flex-internship-item-2" src="portfolio_images/grf_library_box_label.jpg" alt = "Archival Label" onerror="myFunction()"/>
+<img class = "flex-internship-item-3" src="portfolio_images/grf_library_scanner.jpg" alt = "Scanner at Ford Library" onerror="myFunction()"/>
 </div>
 </main>      
 <footer> Olivia Oudsema, 2018
@@ -53,5 +52,11 @@
     document.documentElement.scrollTop = 0;})
         
 </script>
+<script>
+        function myFunction() {
+            document.querySelector("img").style.visibility = "hidden";
+            //alert("The image could not be loaded.");
+        }
+    </script>
 </body>
 </html>

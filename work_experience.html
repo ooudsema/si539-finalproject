@@ -34,17 +34,17 @@
     
 <p class="flex-work-item-3">I am also currently working at the Ann Arbor District Library (AADL) Archives.  The AADL archives are comprised primarily of newspaper clipping, photo negatives, and bound volumes from The Ann Arbor News.  At the archives, I am digitizing photo negatives from the collection, entering metadata into a negatives database, indexing them, and publishing them on the AADL website.  In addition to this, I also digitized Ann Arbor News articles and assisted in answering reference questions submitted to the archive regarding local history.</p> 
 
-<a class="flex-work-item work-1" href="portfolio_images/aadl_clipping_files.jpg" data-lightbox="image-aadl" data-title="AADL clipping files"><img src="portfolio_images/aadl_clipping_files.jpg" alt="AADL clipping files"></a>
+<a class="flex-work-item work-1" href="portfolio_images/aadl_clipping_files.jpg" data-lightbox="image-aadl" data-title="AADL clipping files"><img src="portfolio_images/aadl_clipping_files.jpg" alt="AADL clipping files"onerror="myFunction()"/></a>
 
-<a class="flex-work-item work-2" href="portfolio_images/aadl_cold_room.jpg" data-lightbox="image-aadl" data-title="AADL cold room"><img src="portfolio_images/aadl_cold_room.jpg" alt="AADL cold room"></a>
+<a class="flex-work-item work-2" href="portfolio_images/aadl_cold_room.jpg" data-lightbox="image-aadl" data-title="AADL cold room"><img src="portfolio_images/aadl_cold_room.jpg" alt="AADL cold room"onerror="myFunction()"/></a>
 
-<a class="flex-work-item work-3" href="portfolio_images/bam.jpg" data-lightbox="image-bam" data-title="Bellville Area Museum"><img src="portfolio_images/bam.jpg" alt="Bellville Area Museum"></a>
+<a class="flex-work-item work-3" href="portfolio_images/bam.jpg" data-lightbox="image-bam" data-title="Bellville Area Museum"><img src="portfolio_images/bam.jpg" alt="Bellville Area Museum" onerror="myFunction()"/></a>
 
-<a class="flex-work-item work-4" href="portfolio_images/aadl_negative.jpg" data-lightbox="image-aadl" data-title="AADL negative"><img src="portfolio_images/aadl_negative.jpg" alt="AADL negative"></a>
+<a class="flex-work-item work-4" href="portfolio_images/aadl_negative.jpg" data-lightbox="image-aadl" data-title="AADL negative"><img src="portfolio_images/aadl_negative.jpg" alt="AADL negative" onerror="myFunction()"/></a>
 
-<a class="flex-work-item work-5" href="portfolio_images/bam_exterior.jpg" data-lightbox="image-bam" data-title="Bellville Area Museum Exterior"><img src="portfolio_images/bam_exterior.jpg" alt="Bellville Area Museum Exterior"></a>
+<a class="flex-work-item work-5" href="portfolio_images/bam_exterior.jpg" data-lightbox="image-bam" data-title="Bellville Area Museum Exterior"><img src="portfolio_images/bam_exterior.jpg" alt="Bellville Area Museum Exterior" onerror="myFunction()"/></a>
 
-<a class="flex-work-item work-6" href="portfolio_images/bam_folders.jpg" data-lightbox="image-bam" data-title="Bellville Area Museum Folders"><img src="portfolio_images/bam_folders.jpg" alt="Bellville Area Museum Folders"></a>
+<a class="flex-work-item work-6" href="portfolio_images/bam_folders.jpg" data-lightbox="image-bam" data-title="Bellville Area Museum Folders"><img src="portfolio_images/bam_folders.jpg" alt="Bellville Area Museum Folders" onerror="myFunction()"/></a>
 </div>
 
 </main>
@@ -62,6 +62,11 @@ $("#scroll").click(function() {
     document.body.scrollTop = 0; 
     document.documentElement.scrollTop = 0;})
 </script> 
-
+<script>
+        function myFunction() {
+            document.querySelector("img").style.visibility = "hidden";
+            //alert("The image could not be loaded.");
+        }
+    </script>
 </body>
 </html>
