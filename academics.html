@@ -26,7 +26,7 @@
         </ul>
     </nav>
 </header>
-<div class="flex-container" role="main">
+<div class="flex-academic-container">
 
 <p id="main" tabindex="-1" class="flex-academic-item-p1">I received a BA in History in April 2017 from the University of Michigan-Dearborn, with a focus on modern European history. I am currently pursuing a master’s degree in Information Sciences from the University of Michigan and am specializing in Archives and Records Management and Digital Curation.</p>  
     
@@ -57,10 +57,11 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
 
 <script>
-    $("#scroll").click(function() {
-    document.body.scrollTop = 0; 
-    document.documentElement.scrollTop = 0;})
-        
+$("#scroll").click(function() {
+    $("html, body").animate({ scrollTop: 0 }, "slow");
+  return false;
+    //document.documentElement.scrollTop = 0;})
+}) 
 </script>
 <script>
         function hideError() {

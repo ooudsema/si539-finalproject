@@ -27,7 +27,7 @@
         </ul>
     </nav>
 </header>
-<div class="flex-work-container" role="main">
+<div class="flex-work-container">
 <p id="main" tabindex="-1" class="flex-work-item-1">In 2012, I began interning at the Belleville Area Museum and Archives and working at the Belleville Area District Library.  There I accessioned new acquisitions, entered data about the collection into PastPerfect, scanned documents, and assisted researchers and retrieved information for museum exhibits. My experiences at the Belleville Museum illustrated for me the importance of digitization, especially for local history collections.  The museum had many historically interesting documents, which, not having been accessioned, cataloged, or entered into any database, were not accessible to researchers.</p>  
     
 <p class="flex-work-item-2">During the Summers from 2014 to 2017, I interned at the BASF Corporate Library in Wyandotte. There I assisted in inventorying and preparing reports for digitization, communicating with various departments and third-party vendors, inventorying and digitizing data in obsolete mediums (such as 5 ¼ and 3 ½ in. floppy discs), and maintaining and weeding the library collection.  Additionally, I also worked at the BASF Corporation as the Assistant to the Safety Data Sheet Coordinator, entering Material Safety Data Sheets into a database for the Wyandotte site.</p> 
@@ -59,8 +59,10 @@
 </script>
 <script>
 $("#scroll").click(function() {
-    document.body.scrollTop = 0; 
-    document.documentElement.scrollTop = 0;})
+    $("html, body").animate({ scrollTop: 0 }, "slow");
+  return false;
+    //document.documentElement.scrollTop = 0;})
+})
 </script> 
 <script>
         function hideError() {

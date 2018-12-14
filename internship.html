@@ -47,10 +47,11 @@
 
 <script>
 
-    $("#scroll").click(function() {
-    document.body.scrollTop = 0; 
-    document.documentElement.scrollTop = 0;})
-        
+$("#scroll").click(function() {
+    $("html, body").animate({ scrollTop: 0 }, "slow");
+  return false;
+    //document.documentElement.scrollTop = 0;})
+})
 </script>
 <script>
         function hideError() {
