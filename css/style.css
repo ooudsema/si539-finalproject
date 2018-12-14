@@ -33,7 +33,7 @@ a.skip-main {
     z-index:-999;
 }
 a.skip-main:focus, a.skip-main:active {
-    color: #fff;
+    color:red;
     left: auto;
     top: auto;
     width: 30%;
