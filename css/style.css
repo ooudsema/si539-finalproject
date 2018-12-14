@@ -141,7 +141,7 @@ a.skip-main:focus, a.skip-main:active {
 	  }
 	  
 	  .flip-card-back {
-		background-color: #2980b9;
+		background-color: navy;
 		color: white;
 		transform: rotateY(180deg);
 		z-index: 1;
